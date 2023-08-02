@@ -1,21 +1,16 @@
-import { useNavigate } from "react-router-dom"
-import { supabase } from "../services/supabase"
 import useAuth from "../hooks/useAuth"
 
 function Aulas() {
-	const { setAuth } = useAuth()
-	const navigate = useNavigate()
+	const { signOut } = useAuth()
 
-	async function logOut(){
-		await supabase.auth.signOut()
-		setAuth({})
-		navigate('/login')
+	async function handleSignOut(){
+		await signOut()
 	}
 	
 	return (
 		<div>
 			<h1>Aulas</h1>
-			<button onClick={logOut}>Sair</button>
+			<button onClick={handleSignOut}>Sair</button>
 		</div>
 	)
 }

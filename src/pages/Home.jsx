@@ -1,15 +1,11 @@
-import { useNavigate } from "react-router-dom"
-import { supabase } from "../services/supabase"
+
 import useAuth from "../hooks/useAuth"
 
 function Home() {
-	const { setAuth } = useAuth()
-	const navigate = useNavigate()
-
+	const { signOut } = useAuth()
+	
 	async function logOut(){
-		await supabase.auth.signOut()
-		setAuth({})
-		navigate('/login')
+		await signOut()
 	}
 	
 	return (
