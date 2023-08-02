@@ -9,7 +9,6 @@ function App() {
 		<RecoilRoot>
 			<BrowserRouter>
 				<Routes>
-					<Route path="login" element={<Login />} />
 					<Route path="/" element={<Layout />}>
 						<Route element={<RequireAuth />}>
 							<Route index element={<Home />} />
@@ -20,6 +19,7 @@ function App() {
 							<Route path="usuarios" element={<Usuarios />} />
 						</Route>
 					</Route>
+					<Route path="login" element={<Login />} />
 					<Route path="/*" element={<NotFound />} />
 				</Routes>
 			</BrowserRouter>
