@@ -1,19 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+ 
 @supports (-webkit-touch-callout: none) {
     .h-screen {
         height: -webkit-fill-available;
     }
 }
 
+
 * {
     outline: none;
+    box-sizing: border-box;
 }
 
+ 
 body {
     @apply h-screen
+}
+
+body div {
+    border: 1px solid #33333333;
+    /* background-color: #33333344; */
 }
 
 .active {

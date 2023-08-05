@@ -11,10 +11,19 @@ function Login() {
 		await signIn(email, password)
 	}
 	return (
-		<div>
+		<div className="h-screen grid grid-rows-[70px_auto]">
 			<h1>Login</h1>
-			{/* <Link to="/">TESTAR O HOME</Link> */}
-			<button onClick={handleSignIn}>CLIQUE Fazer login</button>
+			<div>
+				<div>
+					<label htmlFor="">Usuario</label>
+					<input type="text" />
+				</div>
+				<div>
+					<label htmlFor="">Senha</label>
+					<input type="password" />
+				</div>
+				<button onClick={handleSignIn}>CLIQUE Fazer login</button>
+			</div>
 		</div>
 	)
 }

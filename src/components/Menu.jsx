@@ -2,7 +2,7 @@ import MenuItem from "./MenuItem"
 
 function Menu() {
 	return (
-		<nav>
+		<nav className="md:grid md:grid-flow-row">
 			<MenuItem to="/">Home</MenuItem>
 			<MenuItem to="/alunos">Alunos</MenuItem>
 			<MenuItem to="/instrutores">Instrutores</MenuItem>

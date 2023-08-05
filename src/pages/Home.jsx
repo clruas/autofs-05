@@ -9,7 +9,7 @@ function Home() {
 	}
 	
 	return (
-		<div>
+		<div className="md:row-span-2"> {/* aqui tem que ser um componente para todas as paginas */}
 			<h1>Home</h1>
 			<button onClick={logOut}>Sair</button>
 		</div>

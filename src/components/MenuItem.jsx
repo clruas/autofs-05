@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 function MenuItem({ children, ...rest}){
-	return <Link className="mr-6" {...rest}>{children}</Link>
+	return <NavLink className="" {...rest}>{children}</NavLink>
 }
 
 export default MenuItem
