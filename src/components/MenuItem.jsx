@@ -7,12 +7,4 @@ function MenuItem({ image: Component, label, ...rest}){
 	</NavLink>
 }
 
-/*
-function MenuItem({ children, ...rest}){
-	return <NavLink className="grid md:grid-cols-2 md:rounded" {...rest}>
-	{children}
-	</NavLink>
-}
-*/
-
 export default MenuItem

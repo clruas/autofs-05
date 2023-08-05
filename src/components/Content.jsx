@@ -1,6 +1,6 @@
 function Content({ children }){
     return (
-        <div className="md:row-span-2">{children}</div>
+        <div className="grid md:row-span-2 border-l">{children}</div>
     )
 }
 export default Content

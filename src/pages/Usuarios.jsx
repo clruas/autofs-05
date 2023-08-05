@@ -1,8 +1,19 @@
+import { Page } from '../components'
+
 function Usuarios() {
 	return (
-		<div>
-			<h1>Usuarios</h1>
-		</div>
+		<Page>
+			<header className='bg-white grid items-center'>
+				<h1>Usuários</h1>
+				<h1>Usuários</h1>
+			</header>			
+			<section>
+				content
+			</section>			
+			<footer className='bg-white grid items-center'>
+				footer
+			</footer>			
+		</Page>
 	)
 }
 
