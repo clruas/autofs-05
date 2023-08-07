@@ -21,11 +21,9 @@ function Usuarios() {
 				<Button>Novo usuario</Button>
 			</Page.Header>			
 			<Page.Content>
+				<div></div>
 				<div className="h-[calc(100vh_-_100px)] overflow-y-scroll p-2">
-
 					{usuarios.map(usuario => <Usuario key={usuario.id} usuario={usuario} /> )}
-					{/* {Array.from({ length: 100 }).map(item => <div>Testando</div>)} */}
-					{/* {console.log(Array.from({length: 10 }))} */}
 				</div>
 			</Page.Content>
 			<Page.Footer>
