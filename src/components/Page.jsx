@@ -1,6 +1,39 @@
-function Page({ children }){
+export const Header = ({ children }) => {
     return (
-        <div className="grid grid-rows-[80px_1fr_80px]">{children}</div>
+        <div className='bg-white p-2 grid grid-cols-[200px_1fr_auto] items-center'>{children}</div>
     )
 }
-export default Page
+
+export const Content = ({ children }) => {
+    return (
+        <div>{children}</div>
+    )
+}
+
+export const Footer = ({ children }) => {
+    return (
+        <div className='bg-white grid items-center'>{children}</div>
+    )
+}
+
+Page.Header = Header;
+Page.Content = Content;
+Page.Footer = Footer;
+
+export function Page({ children }) {
+    return (
+        <div className="grid grid-rows-[50px_1fr_50px]">{children}</div>
+        // <Wrap isVisible={isVisible}>
+        //   {children}
+        // </Wrap>
+    )
+}
+
+
+// function Page({ children }){
+//     return (
+//         <div className="grid grid-rows-[50px_1fr_50px]">{children}</div>
+//     )
+// }
+
+// export default Page
