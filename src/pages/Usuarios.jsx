@@ -1,14 +1,13 @@
 import { useEffect, useState } from 'react'
 import { Page, Button } from '../components'
 import { supabase } from '../services/supabase'
-//import { Modal } from '../components/Modal'
+import Usuario from '../components/Usuario'
 
 function Usuarios() {
 	const [usuarios, setUsuarios] = useState([])
 	function getData(){
 		async function getUserData(){
 			let { data, error } = await supabase.from('usuarios').select('*')
-			console.log(data)
 			setUsuarios(data)
 		}
 		getUserData()
@@ -17,20 +16,17 @@ function Usuarios() {
 	return (
 		<Page>
 			<Page.Header>
-				<h1 className='text-xl font-bold'>Usuários</h1>
+				<h1 className='text-md font-bold'>Usuários</h1>
 				<div></div>
 				<Button>Novo usuario</Button>
 			</Page.Header>			
 			<Page.Content>
-				{usuarios.map(usuario => {
-					return <div>
-						<div>{usuario.dados.firstName} {usuario.dados.lastName}</div>
-						<div>{usuario.email}</div>
-						<div>{usuario.tipo}</div>
-						<div><Button>Detalhes</Button></div>
-						<div><Button>Excluir</Button></div>
-					</div>
-				})}
+				<div className="h-[calc(100vh_-_100px)] overflow-y-scroll p-2">
+
+					{usuarios.map(usuario => <Usuario key={usuario.id} usuario={usuario} /> )}
+					{/* {Array.from({ length: 100 }).map(item => <div>Testando</div>)} */}
+					{/* {console.log(Array.from({length: 10 }))} */}
+				</div>
 			</Page.Content>
 			<Page.Footer>
 				footer

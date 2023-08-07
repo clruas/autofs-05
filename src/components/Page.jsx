@@ -6,7 +6,7 @@ export const Header = ({ children }) => {
 
 export const Content = ({ children }) => {
     return (
-        <div>{children}</div>
+        <div className="grid">{children}</div>
     )
 }
 
@@ -23,17 +23,5 @@ Page.Footer = Footer;
 export function Page({ children }) {
     return (
         <div className="grid grid-rows-[50px_1fr_50px]">{children}</div>
-        // <Wrap isVisible={isVisible}>
-        //   {children}
-        // </Wrap>
     )
 }
-
-
-// function Page({ children }){
-//     return (
-//         <div className="grid grid-rows-[50px_1fr_50px]">{children}</div>
-//     )
-// }
-
-// export default Page
