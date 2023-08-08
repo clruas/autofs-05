@@ -1,7 +1,19 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { RecoilRoot } from "recoil"
 
-import { Home, Login, Aulas, Alunos, NotFound, Layout, Instrutores, Financeiro, Usuarios } from '../pages'
+import { 
+	Home, 
+	Login, 
+	Aulas, 
+	Alunos, 
+	NotFound, 
+	Layout, 
+	Instrutores, 
+	Financeiro, 
+	Usuarios, 
+	UsuariosList, 
+	UsuariosNew
+} from '../pages'
 import RequireAuth from "./RequireAuth"
 
 function App() {
@@ -16,7 +28,10 @@ function App() {
 							<Route path="instrutores" element={<Instrutores />} />
 							<Route path="aulas" element={<Aulas />} />
 							<Route path="financeiro" element={<Financeiro />} />
-							<Route path="usuarios" element={<Usuarios />} />
+							<Route path="usuarios" element={<Usuarios />}>
+								<Route index element={<UsuariosList />} />
+								<Route path="new" element={<UsuariosNew />} />
+							</Route>
 						</Route>
 					</Route>
 					<Route path="login" element={<Login />} />
