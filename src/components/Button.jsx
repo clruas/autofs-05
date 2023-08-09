@@ -1,4 +1,5 @@
 import { twMerge } from 'tailwind-merge'
+
 function Button({ children, ...rest }){
     return (
         <button 
@@ -7,4 +8,4 @@ function Button({ children, ...rest }){
         >{children}</button>
     )
 }
-export default Button 
+export default Button
