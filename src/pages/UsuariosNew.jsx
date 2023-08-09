@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react'
 import { Page, Button } from '../components'
-import { supabase } from '../services/supabase'
-import Usuario from '../components/Usuario'
-import { Outlet } from 'react-router-dom'
 
 function UsuariosNew() {
 	return (
