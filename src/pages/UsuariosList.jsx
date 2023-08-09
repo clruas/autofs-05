@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { ButtonList, Page, Button } from '../components'
+import { Page, Button } from '../components'
 import { supabase } from '../services/supabase'
 import Usuario from '../components/Usuario'
 import { PiPencil } from 'react-icons/pi'
@@ -27,9 +27,7 @@ function UsuariosList() {
 				</div>
 			</Page.Content>
 			<Page.Footer className="grid-flow-col gap-2">
-				<ButtonList>
-                    <ButtonList.Icon className="text-sky-500" icon={PiPencil} />
-                </ButtonList>
+				<PiPencil />
 				<Button>Salvar</Button>
 				<Button variant='outline' onClick={() => alert("Testando")}>Salvar</Button>
 				<Button>Salvar</Button>

@@ -5,7 +5,7 @@ import {
 	Home, 
 	Login, 
 	Aulas, 
-	Alunos, 
+	Alunos,
 	NotFound, 
 	Layout, 
 	Instrutores, 

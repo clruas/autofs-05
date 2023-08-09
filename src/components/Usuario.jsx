@@ -1,5 +1,4 @@
 import React from 'react'
-import { ButtonList } from '../components/'
 import { PiPencil, PiTrash, PiUser } from 'react-icons/pi'
 
 function Usuario({ usuario }) {
