@@ -12,13 +12,13 @@ function UsuariosNew() {
 				<div className="h-[calc(100vh_-_100px)] overflow-y-scroll p-2">
 					<div>
 						<ul>
-							<li>Retirar imports nao utilizados </li>
 							<li>Formulario de cadastro</li>
 							<li>Criar funcao para facilitar o twMerge </li>
-							<li>Criar Link igual o botao </li>
 							<li>Formatar o footer para alinhar a direita e esquerda (criar sub-componentes footer.left, footer.right) </li>
 							<li>Consertar a formatacao do componente Content </li>
 							<li>Diminuir o tamanho do menu lateral </li>
+							<li>OK - Retirar imports nao utilizados</li>
+							<li>OK - Criar Link igual o botao </li>
 						</ul>
 					</div>
 				</div>
